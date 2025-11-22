@@ -1,46 +1,41 @@
-import { StyleSheet } from 'react-native';
-import { COLORS } from './colors';
-
-export const STYLES = StyleSheet.create({
+export const STYLES = {
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 20,
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 16,
     },
     message: {
-        textAlign: 'center',
-        paddingBottom: 10,
+        textAlign: "center",
+        paddingBottom: 16,
         fontSize: 16,
     },
     buttonsContainer: {
-        position: 'absolute',
-        bottom: 50,
-        width: '100%',
-        alignItems: 'center',
+        position: "absolute",
+        bottom: 40,
+        width: "100%",
+        alignItems: "center",
     },
     button: {
-        backgroundColor: COLORS.accent,
-        paddingHorizontal: 20,
-        paddingVertical: 15,
-        borderRadius: 10,
-        marginVertical: 10,
-        width: '80%',
-        alignItems: 'center',
+        backgroundColor: "#007AFF",
+        padding: 16,
+        borderRadius: 8,
+        marginBottom: 10,
     },
     buttonText: {
-        color: COLORS.white,
+        color: "#fff",
         fontSize: 16,
-        fontWeight: 'bold',
+        fontWeight: "bold",
     },
     title: {
-        fontSize: 28,
-        fontWeight: 'bold',
-        marginBottom: 20,
+        fontSize: 24,
+        fontWeight: "bold",
+        marginBottom: 24,
     },
-    subtitle: {
-        fontSize: 18,
-        textAlign: 'center',
-        color: COLORS.gray,
+    overlay: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "transparent",
     },
-});
+};

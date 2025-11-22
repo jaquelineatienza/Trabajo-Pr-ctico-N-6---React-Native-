@@ -1,5 +1,6 @@
 import { CameraType } from 'expo-camera';
 import { StyleProp, ViewStyle } from 'react-native';
+import { Product } from '../constants/Product';
 
 export type RootStackParamList = {
     Login: undefined;
@@ -7,6 +8,9 @@ export type RootStackParamList = {
     FacialRegistration: undefined;
     FacialLogin: undefined;
     Panel: undefined;
+    ProductManagement: undefined;
+    ProductForm: { product?: Product };
+    BarcodeScanner: { onBarcodeScanned: (barcode: string) => void };
 };
 
 export interface CameraComponentProps {
@@ -14,4 +18,9 @@ export interface CameraComponentProps {
     onCameraReady?: () => void;
     style?: StyleProp<ViewStyle>;
     children?: React.ReactNode;
+}
+
+export interface BarcodeScannerProps {
+    onBarcodeScanned: (barcode: string) => void;
+    onClose: () => void;
 }

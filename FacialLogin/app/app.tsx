@@ -6,6 +6,8 @@ import FacialLoginScreen from "./screens/FacialLoginScreen";
 import FacialRegistrationScreen from "./screens/FacialRegistrationScreen";
 import LoginScreen from "./screens/LoginScreen";
 import PanelScreen from "./screens/PanelScreen";
+import ProductFormScreen from "./screens/ProductFormScreen";
+import ProductManagementScreen from "./screens/ProductManagementScreen";
 import WelcomeScreen from "./screens/WelcomeScreen";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -38,6 +40,16 @@ export default function App() {
           name="Panel"
           component={PanelScreen}
           options={{ title: "Panel Principal" }}
+        />
+        <Stack.Screen
+          name="ProductManagement"
+          component={ProductManagementScreen}
+          options={{ title: "Gestión de Productos" }}
+        />
+        <Stack.Screen
+          name="ProductForm"
+          component={ProductFormScreen}
+          options={{ title: "Formulario de Producto" }}
         />
       </Stack.Navigator>
     </NavigationContainer>

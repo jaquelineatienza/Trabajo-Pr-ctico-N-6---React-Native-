@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import LoadingSpinner from "../components/LoadingSpinner";
+import LoadingSpinner from "../components/ProductForm";
 import { COLORS } from "../constants/colors";
 import { STYLES } from "../constants/styles";
 import { RootStackParamList } from "../constants/types";
